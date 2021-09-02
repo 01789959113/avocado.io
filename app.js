@@ -182,7 +182,7 @@ app.get('/commercial', (req, res)=>{
 
 // land page
 app.get('/land', (req, res)=>{
-    res.render('land', {title: 'Title'})
+    res.render('land', {title: 'Land'})
 })
 
 
