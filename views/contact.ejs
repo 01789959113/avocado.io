@@ -1,0 +1,134 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/contact1.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="header_heading">Contact Us</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact section -->
+            <section class="contact">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-left shadow">
+                            <h1>Get In Touch</h1>
+                            <ul class="list">
+                                <li>Dial # 1879468952-11</li>
+                                <li>Fax # 02-17345498</li>
+                                <li>Hotline # 163597</li>
+                                <li>info@avocado.com</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-right">
+
+                            <!-- error message -->
+                            <div class="form-alert pt-2">
+                                <%- include('./partials/contactErrMsg.ejs') %>
+                            </div>
+
+                            <h1>Leave Us Your Info.</h1>
+                            <form action="/contact" method="POST" class="row gy-3 contact-form">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter Your Name"
+                                        value="<%= typeof name !='undefined'? name :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter Your Email"
+                                        value=" <%= typeof email !='undefined'? email :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <input type="number" class="form-control" id="mobile" name="mobile"
+                                        placeholder="Your Mobile Number"
+                                        value=" <%= typeof mobile !='undefined'? mobile :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" name="subject"
+                                        placeholder="Subject" value=" <%= typeof subject !='undefined'? subject :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="address" name="address"
+                                        placeholder="Enter Your Address"
+                                        value=" <%= typeof address !='undefined'? address :'' %>" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="contact-address">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-left">
+                            <h1>Corporate Office Address</h1>
+                            <ul class="office-list">
+                                <li> <i class="fas fa-map-marker-alt"></i>Agrabad Access Rd ,</li>
+                                <li>5th Floor, 65 Naim Avenue,</li>
+                                <li>Agrabad-2, Chittagong,</li>
+                                <li>Bangladesh</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-right">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.648841118479!2d91.79919361534617!3d22.32911664749006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8d230aa220d%3A0x3148f72010b590cb!2sAgrabad%20Access%20Rd%2C%20Chittagong!5e0!3m2!1sen!2sbd!4v1629474343711!5m2!1sen!2sbd"
+                                width="100%" height="450px" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 150,
+                        duration: 800
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

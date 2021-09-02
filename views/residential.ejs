@@ -1,0 +1,158 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/home2.jpg" class="d-block w-100 img-fluid latest-porject-img"
+                            alt="image is loading" />
+                        <div class="carousel-caption residential-caption d-md-block">
+                            <h1>Residential</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- residential project section -->
+            <section class="residential_project_section">
+                <div class="container my-5">
+                    <h1>Residential Projects</h1>
+                    <div class="row gy-3">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-one">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential1.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Anms Villa</h5>
+                                <p>Halishahar R/A, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-two">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential3.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Victoria</h5>
+                                <p>JamalKhan R/A, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-three">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential4.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Daffodil</h5>
+                                <p>Lalkhanbazar, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-four">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential5.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Lora</h5>
+                                <p>East Nasirabad R/A, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-five">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential6.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Galaxy</h5>
+                                <p>Gec Circle, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="residential-project-six">
+                            <figure class="residential-pro-img">
+                                <img src="./img/residential7.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="residentialTxt">
+                                <h5>Avocado Tranquility</h5>
+                                <p>Kajer dewri, Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- commercial, recidential and land porject section -->
+            <section class="comm_resi_land">
+                <div class="container my-5">
+                    <h1>Our Projects</h1>
+                    <div class="row gy-4">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="commercial">
+                                <img src="./img/commercial1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="commercial-text">
+                                    <h5>Commercial</h5>
+                                    <p id="commercial_para"><a href="/commercial">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="residential">
+                                <img src="./img/residential1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="residential-text">
+                                    <h5>Residential</h5>
+                                    <p id="residential_para"><a href="/residential">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="land">
+                                <img src="./img/land1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="land-text">
+                                    <h5>Land</h5>
+                                    <p id="land_para"><a href="/land">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 200,
+                        duration: 1000
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

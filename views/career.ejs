@@ -1,0 +1,161 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/career1.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="header_heading">Career </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- career section -->
+            <section class="career">
+                <div class="container py-2">
+                    <div class="row">
+                        <h4>Career Opportunities @ Avocado Properties</h4>
+                        <h1 class="career-heading">Real Estate Expert? <span>Join The Team Now.!</span></h1>
+                        <div class="col-md-12 col-12 col-lg-12 col-xxl-12 career-main">
+                            <p>At Avocado Properties, leadership and innovation come naturally. Our team has constantly
+                                transformed to
+                                meet the changing landscape of the marketplace, serving the customers with quality
+                                residential
+                                apartments, commercial spaces, and great customer support & service. It continues today
+                                with
+                                innovations that consistently reinvent the business and our team as we strive for
+                                raising our
+                                standards for quality, safety, and sustainability.</p>
+                            <p>*We are an Equal Opportunity Employer and all inquiries are kept confidential.</p>
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6" data-aos="fade-right">
+
+                            <!-- error message -->
+                            <div class="form-alert pt-2">
+                                <%- include('./partials/careerErrMsg.ejs') %>
+                            </div>
+
+                            <h1 class="career-heading-two">Please Share Your Details</h1>
+                            <form action="/career" method="POST" class="row gy-3 career-form">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter Your name"
+                                        value="<%= typeof name !='undefined'? name :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter Your Email"
+                                        value=" <%= typeof email !='undefined'? email :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <input type="number" class="form-control" id="mobile" name="mobile"
+                                        placeholder="Your Mobile Number"
+                                        value=" <%= typeof mobile !='undefined'? mobile :'' %>">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select" name="jobPosition" aria-label="Default select example">
+                                        <option selected>Select Job Type</option>
+                                        <option value="Project Engineer">Project Engineer</option>
+                                        <option value="Graphics Designer">Creative Graphics Designer</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="address" name="address"
+                                        placeholder="Enter Your Address"
+                                        value=" <%= typeof address !='undefined'? address :'' %>" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="cv" name="cv"
+                                        placeholder="Enter Your CV"
+                                        value=" <%= typeof cv !='undefined'? cv :'' %>" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn">Apply Now</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 career-form-right-div" data-aos="fade-left">
+                            <h1>Hr Philosophy</h1>
+                            <p>Where things are not always easy but worth it. Where getting results never matter more
+                                than
+                                how you get them.</p>
+                            <p>We want people who are ready to collaborate. To argue. To agree. To put in the work. And
+                                we
+                                believe that to change the world, we have to get out into the actual world. Which means
+                                engaging with people and communities and making connections through opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- position for job -->
+            <section class="open-position">
+                <div class="container py-2">
+                    <h1 class="heading">Open Positions</h1>
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 mx-auto main-left">
+                            <h1>Project Engineer</h1>
+                            <p>We are looking for a Manager, experienced in construction and setup a new Resort/Hotel in
+                                country/abroad.</p>
+                            <p><span>Job Type :</span> Full Time</p>
+                            <p><span>Salary :</span> Negotiable </p>
+                            <p><span>Job Location :</span> Chittagong </p>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 mx-auto main-right">
+                            <h1>Creative Graphics Designer</h1>
+                            <p>We are hiring mid-level or proven creative knowledge, experience for at least 02 years
+                            </p>
+                            <p><span>Job Type :</span> Full Time</p>
+                            <p><span>Salary :</span> Negotiable </p>
+                            <p><span>Job Location :</span> Chittagong </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 150,
+                        duration: 800
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

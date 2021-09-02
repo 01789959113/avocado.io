@@ -1,0 +1,162 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/land5.jpg" class="d-block w-100 img-fluid latest-porject-img"
+                            alt="image is loading" />
+                        <div class="carousel-caption latest-project-caption d-md-block">
+                            <h1>Avocado City</h1>
+                            <p>Landmark Housing Society, Chittagong</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- image gallery  -->
+            <section class="image-gallery">
+                <div class="container py-5">
+                    <h1 class="gallery-heading">Get The Details View Of Land </h1>
+                    <div class="row gy-3 py-3 images">
+                        <div class="col-md-12 col-12 col-lg-3 col-xxl-3">
+                            <a href="./img/land6.jpg" target="_blank"> <img src="./img/land6.jpg" alt="image is loading"
+                                    class="img-fluid"> </a>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-3 col-xxl-3">
+                            <a href="./img/land8.jpg" target="_blank"> <img src="./img/land8.jpg" alt="image is loading"
+                                    class="img-fluid"> </a>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-3 col-xxl-3">
+                            <a href="./img/land10.jpg" target="_blank"> <img src="./img/land10.jpg" alt="image is loading"
+                                    class="img-fluid"> </a>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-3 col-xxl-3">
+                            <a href="./img/land11.jpg" target="_blank"> <img src="./img/land11.jpg" alt="image is loading"
+                                    class="img-fluid"> </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- feature and amenities -->
+            <section class="feature">
+                <div class="container py-5">
+                    <h2 class="heading">At A Glance Avocado City </h2>
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-12 col-xxl-12 feature-text">
+                            <h4>Project type</h4>
+                            <p><i class="far fa-check-circle"></i> Land</p>
+                            <h4>Land Size</h4>
+                            <p>3100 Bigha (approx) </p>
+                            <h4>Project's Present Status</h4>
+                            <p>Ongoing</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- map section of latest project one -->
+            <section class="land-project-map">
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-8 col-xxl-8 main-left">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.991424674128!2d91.8475412153464!3d22.353952646593218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad27b83a0f0f19%3A0xac9dbd9417d21ad2!2sLandmark%20Housing%20Society!5e0!3m2!1sen!2sbd!4v1629718872714!5m2!1sen!2sbd"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4 main-right">
+                            <h1>Location</h1>
+                            <p> Landmark Housing Society, Chittagong.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- land project section -->
+            <section class="land_project_section">
+                <div class="container my-5">
+                    <h1>Land Projects</h1>
+                    <div class="row gy-3">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-one">
+                            <figure class="land-pro-img">
+                                <img src="./img/land2.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Valley</h5>
+                                <p>Oxygen, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-two">
+                            <figure class="land-pro-img">
+                                <img src="./img/land3.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Highland</h5>
+                                <p>Pahartali, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-three">
+                            <figure class="land-pro-img">
+                                <img src="./img/land4.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Village</h5>
+                                <p>Chandgaon R/A,, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-five">
+                            <figure class="land-pro-img">
+                                <img src="./img/land1.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Willows</h5>
+                                <p>Halishahar, Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 200,
+                        duration: 1000
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

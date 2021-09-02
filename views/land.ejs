@@ -1,0 +1,147 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/land1.jpg" class="d-block w-100 img-fluid latest-porject-img"
+                            alt="image is loading" />
+                        <div class="carousel-caption land-caption d-md-block">
+                            <h1>Land</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- land porject section -->
+            <section class="land_project_section">
+                <div class="container my-5">
+                    <h1>Land Projects</h1>
+                    <div class="row gy-3">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-one">
+                            <figure class="land-pro-img">
+                                <img src="./img/land2.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Valley</h5>
+                                <p>Oxygen, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-two">
+                            <figure class="land-pro-img">
+                                <img src="./img/land3.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Highland</h5>
+                                <p>Pahartali, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-three">
+                            <figure class="land-pro-img">
+                                <img src="./img/land4.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Village</h5>
+                                <p>Chandgaon R/A,, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-four">
+                            <figure class="land-pro-img">
+                                <img src="./img/land5.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado City</h5>
+                                <p>Landmark Housing Society, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="land-project-five">
+                            <figure class="land-pro-img">
+                                <img src="./img/land1.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="landTxt">
+                                <h5>Avocado Willows</h5>
+                                <p>Halishahar, Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- commercial, recidential and land porject section -->
+            <section class="comm_resi_land">
+                <div class="container my-5">
+                    <h1>Our Projects</h1>
+                    <div class="row gy-4">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="commercial">
+                                <img src="./img/commercial1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="commercial-text">
+                                    <h5>Commercial</h5>
+                                    <p id="commercial_para"><a href="/commercial">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="residential">
+                                <img src="./img/residential1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="residential-text">
+                                    <h5>Residential</h5>
+                                    <p id="residential_para"><a href="/residential">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="land">
+                                <img src="./img/land1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="land-text">
+                                    <h5>Land</h5>
+                                    <p id="land_para"><a href="/land">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 200,
+                        duration: 1000
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

@@ -1,0 +1,144 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/latest-proOne2.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1 class="header_heading">Clients</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form section of client -->
+            <section class="client-form">
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-left" data-aos="fade-right">
+                            <!-- error message -->
+                            <div class="form-alert pt-2">
+                                <%- include('./partials/clientErrMsg.ejs') %>
+                            </div>
+
+                            <h1 class="client-heading">Your Preference</h1>
+                            <form action="/client" method="POST" class="row g-3">
+                                <div class="col-12">
+                                    <select class="form-select" id="location" name="location"
+                                        aria-label="Default select example">
+                                        <option selected>Prefered Location</option>
+                                        <option value="kulshi R/A">kulshi R/A</option>
+                                        <option value="Nasirabad R/A">Nasirabad R/A</option>
+                                        <option value="East Nasirabad R/A">East Nasirabad R/A</option>
+                                        <option value="Chandgaon R/A">Chandgaon R/A</option>
+                                        <option value="JamalKhan R/A">JamalKhan R/A</option>
+                                        <option value="LalkhanBazar">LalkhanBazar</option>
+                                        <option value="Kajer Dewri">Kajer Dewri</option>
+                                        <option value="Gec Circle">Gec Circle</option>
+                                        <option value="Muradpur">Muradpur</option>
+                                        <option value="Mohammodpur Muradpur">Mohammodpur Muradpur</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select" id="size" name="size"
+                                        aria-label="Default select example">
+                                        <option selected>Prefered Size</option>
+                                        <option value="2800 sft">2800 sft</option>
+                                        <option value="2950 sft">2950 sft</option>
+                                        <option value="3100 sft">3100 sft</option>
+                                        <option value="3200 sft">3200 sft</option>
+                                        <option value="3400 sft">3400 sft</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputState" class="form-label">Bed Rooms :</label>
+                                    <select class="form-select" id="bedRoom" name="bedRoom">
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputState" class="form-label">Bath Rooms : </label>
+                                    <select class="form-select" id="bathRoom" name="bathRoom">
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <h1 class="client-heading">Contact Information</h1>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="name" name="name"
+                                        placeholder="Enter Your Name">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="Enter Your Email">
+                                </div>
+                                <div class="col-12">
+                                    <input type="number" class="form-control" id="mobile" name="mobile"
+                                        placeholder="Your Mobile Number">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="address" name="address"
+                                        placeholder="Enter Your Address" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 main-right" data-aos="fade-left">
+                            <h1 class="meet-client">Meeting With Client</h1>
+                            <img src="./img/client1.jpg" alt="image is loading" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 150,
+                        duration: 800
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>

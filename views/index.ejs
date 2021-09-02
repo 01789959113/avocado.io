@@ -1,0 +1,236 @@
+<!-- head section -->
+<%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <!-- navbar section -->
+        <%- include('./partials/nav.ejs') %>
+
+            <!-- header image section of carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/home2.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1>Make <span class="header-text"> living </span> <br> a dreamy <span
+                                    class="header-text">affair</span></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/home3.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1>evolution in <span class="header-text"> living </span> <br> with <span
+                                    class="header-text">avocado</span></h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/home1.jpg" class="d-block w-100 img-fluid" alt="image is loading" />
+                        <div class="carousel-caption d-md-block">
+                            <h1><span class="header-text"> definitive.</span> different. <span
+                                    class="header-text">dependable
+                                </span> </h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- welcome section of home page -->
+            <section class="welcome-section">
+                <div class="container my-5">
+                    <h1 class="welcome-heading py-3">Welcome to Avocado Properties Ltd.!</h1>
+                    <div class="row py-3">
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 py-3">
+                            <img src="./img/welc1.jpg" alt="image is loading" class="img-fluid">
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-6 col-xxl-6 py-3 shadow">
+                            <p class="welcome-text">Avocado Properties Ltd. (APL) is dedicated and prepared to become
+                                the Top
+                                Real Estate Company in Bangladesh and for that we offer our clients with Great
+                                Experience.
+                                Avocado started its journey in 1999 and now with 22 years of experience and
+                                participation in the
+                                Real Estate Industry, we are inspired to move forward with our new motto, “Architecting
+                                Experience”. </p>
+                            <p class="welcome-text"> As a Real Estate Developer company in Bangladesh, Avocado
+                                Properties Ltd.
+                                has the ambition to offer wellness for all and as such we believe exciting times are
+                                coming
+                                ahead for us. True to our motto, key values and ambitions, APL is engaged in multiple
+                                numbers of
+                                projects aiming to provide Affordable Housing for all. This is our business policy, and
+                                this is
+                                what makes us loved by so many!</p>
+                            <a href="/contact" class="contact-btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- latest project section of home page  -->
+            <section class="latest_project_section">
+                <div class="container my-5">
+                    <h1>Latest Projects</h1>
+                    <div class="row gy-4" data-aos="zoom-in">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="latest-project-one">
+                            <figure class="latProj-one-img">
+                                <img src="./img/project1.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="latProTxt-one">
+                                <h5>Avocado Future Tower</h5>
+                                <p>Panchlaish R/A, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4 " id="latest-project-two">
+                            <figure class="latProj-two-img">
+                                <img src="./img/project2.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="latProTxt-two">
+                                <h5>Avocado Nawab Tower</h5>
+                                <p>khulshi R/A, Chittagong</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4" id="latest-project-three">
+                            <figure class="latProj-three-img">
+                                <img src="./img/project3.jpg" alt="image is loading" class="img-fluid">
+                            </figure>
+                            <div class="latProTxt-three">
+                                <h5>Avocado Dream Tower</h5>
+                                <p>Nasirabad R/A, Chittagong</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- commercial, recidential and land porject section -->
+            <section class="comm_resi_land">
+                <div class="container my-5">
+                    <h1>Our Projects</h1>
+                    <div class="row gy-4">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="commercial">
+                                <img src="./img/commercial1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="commercial-text">
+                                    <h5>Commercial</h5>
+                                    <p id="commercial_para"><a href="/commercial">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="residential">
+                                <img src="./img/residential1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="residential-text">
+                                    <h5>Residential</h5>
+                                    <p id="residential_para"><a href="/residential">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4">
+                            <div class="land">
+                                <img src="./img/land1.jpg" alt="image is loading" class="img-fluid">
+                                <div class="land-text">
+                                    <h5>Land</h5>
+                                    <p id="land_para"><a href="/land">Explore More </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- why choose us section -->
+            <section class="choose">
+                <div class="container py-5">
+                    <h1 class="choose-heading py-5">Why Choose Avocado ?</h1>
+                    <div class="row gy-3 pb-5">
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4 mx-auto"  data-aos="zoom-in">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">You Get a Partner</h2>
+                                    <p class="card-text">We make the complicated world of property simple. Our bespoke
+                                        property services means
+                                        you’ll have
+                                        a single point of contact from start to finish. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4 mx-auto"  data-aos="zoom-in">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">We Work Harder</h2>
+                                    <p class="card-text">We’re open seven days a week, because working longer and harder
+                                        means better results for
+                                        our
+                                        clients. And clients satisfaction makes us satisfied. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-12 col-lg-4 col-xxl-4 mx-auto"  data-aos="zoom-in" >
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">We Rank Your Trust </h2>
+                                    <p class="card-text">Healthy relationships are built on honesty. We want to
+                                        make sure we’re as
+                                        transparent and
+                                        open as we can be – in our advice, results, terms & prices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- map section -->
+            <section class="map-section">
+                <div class="container-fluid">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118103.33518909621!2d91.74982775043046!3d22.32607810479663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8a64095dfd3%3A0x5015cc5bcb6905d9!2sChattogram!5e0!3m2!1sen!2sbd!4v1629302371671!5m2!1sen!2sbd"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <!-- footer section -->
+            <%- include('./partials/footer.ejs') %>
+
+
+
+                <!-- Optional JavaScript; choose one of the two! -->
+
+                <!-- Option 1: Bootstrap Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                    crossorigin="anonymous"></script>
+
+                <!-- Option 2: Separate Popper and Bootstrap JS -->
+                <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+                <!-- github js link -->
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                    AOS.init({
+                        offset: 150,
+                        duration: 700
+                    });
+                </script>
+
+                <!-- external js link -->
+                <script src="index.js"></script>
+
+
+
+    </body>
+
+    </html>
