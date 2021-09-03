@@ -4,7 +4,7 @@ const path = require('path')
 require('./db/connect')
 const User = require('./models/model')
 
-const hostname = '127.0.0.1';
+// const hostname = '127.0.0.1';
 const port = process.env.PORT || 3000;
 
 
@@ -287,6 +287,10 @@ app.get('*', (req, res)=>{
 
 
 // server listening to port
-app.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
+// app.listen(port, hostname, () => {
+//     console.log(`Server running at http://${hostname}:${port}/`);
+// });
+
+app.listen(port, () => {
+    console.log(`Server running at ${port}`);
 });
