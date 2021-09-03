@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -54,7 +54,7 @@ body {
   padding: 0.5rem 1rem;
 }
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 
@@ -160,6 +160,10 @@ body {
 .welcome-text {
   font-size: 1.3rem;
   font-family: var(--main-font);
+}
+.welcome-section img{
+  border: 2px solid #0e0e0e;
+  border-radius: 12px;
 }
 .contact-btn {
   text-decoration: none;
@@ -369,15 +373,14 @@ body {
   font-size: 3rem;
   color: #000;
 }
-.choose .card{
+.choose .card {
   background-color: #0e0e0e;
   position: relative;
 }
-.choose .card:hover{
+.choose .card:hover {
   /* transform: scaleY(1.1); */
   bottom: 10%;
   cursor: pointer;
-
 }
 .choose .card .card-title {
   font-family: var(--main-font);
@@ -393,7 +396,6 @@ body {
   padding: 0.5rem 0rem;
   color: #f1f3f6;
 }
-
 
 /* map section */
 .map-section iframe {
@@ -1310,10 +1312,11 @@ body {
 @media only screen and (max-width: 540px) {
   /* home page  */
   .navbar-brand {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .navbar-brand span {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    top: 35px;
   }
   .nav-link {
     font-size: 1.1rem;
@@ -1343,7 +1346,6 @@ body {
   .choose .card .card-text {
     font-size: 1.2rem;
   }
-
 
   .latProTxt-one,
   .latProTxt-two,
@@ -1423,7 +1425,10 @@ body {
     font-family: var(--main-font);
   }
   .career .career-heading {
-    font-size: 2rem;
+    font-size: 1.6rem;
+  }
+  .career .career-main p {
+    font-size: 1.2rem;
   }
   /* position section of career */
   .open-position {
@@ -1435,11 +1440,11 @@ body {
 
   .open-position .main-left p,
   .open-position .main-right p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .open-position .main-left p span,
   .open-position .main-right p span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .career-form-right-div {
@@ -1450,7 +1455,7 @@ body {
     font-weight: 500;
   }
   .career-form-right-div p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .contact .main-left h1,
@@ -1494,15 +1499,15 @@ body {
     left: 15%;
   }
   .latest-project-caption h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .latest-project-caption p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   /* porjects gallery section */
   .gallery-heading {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   /* commercial section */
@@ -1557,11 +1562,11 @@ body {
 @media only screen and (max-width: 280px) {
   /* home page */
   .navbar-brand {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .navbar-brand span {
-    font-size: 1rem;
-    top: 35px;
+    font-size: 0.8rem;
+    top: 29px;
   }
   .nav-link {
     font-size: 1rem;
@@ -1641,7 +1646,10 @@ body {
   }
   /* career page */
   .career .career-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .career .career-main p {
+    font-size: 1rem;
   }
   /* position section of career */
   .open-position {
@@ -1658,15 +1666,15 @@ body {
     font-weight: normal;
   }
   .career-form-right-div p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .open-position .main-left p,
   .open-position .main-right p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .open-position .main-left p span,
   .open-position .main-right p span {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .contact-form input,
@@ -1694,7 +1702,7 @@ body {
   /* projects gallery section */
   .gallery-heading {
     padding: 1rem 0rem;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: normal;
   }
 
@@ -1704,10 +1712,10 @@ body {
     left: 15%;
   }
   .latest-project-caption h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .latest-project-caption p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   /* commercial section */
