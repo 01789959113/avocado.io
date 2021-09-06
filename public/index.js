@@ -17,31 +17,20 @@ function myFunction() {
 
 // image gallery using jQuery
 $(document).ready(function () {
+
+    // image gallery
     $('.images').magnificPopup({
         delegate: 'a',
         type: 'image',
         gallery: { enabled: true }
     });
 
+      // count in about 
+      $('.count').counterUp({
+        delay: 10,
+        time: 3000
+    });
 })
-
-// image gallery 
-// let main_img = document.querySelector('.main_img img')
-// let sub_img = document.querySelectorAll('.sub_img img')
-// // console.log(sub_img)
-
-// function image() {
-//     sub_img.forEach(element => {
-//         element.addEventListener('click', function () {
-//             console.log(this)
-//             let curretnImg = this.src;
-//             console.log(curretnImg)
-//             main_img.src = curretnImg;
-//         })
-//     });
-// }
-// image();
-
 
 // selecting all the latest project projects id
 

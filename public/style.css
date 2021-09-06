@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 * {
   margin: 0;
@@ -11,8 +11,8 @@ html {
 :root {
   /* background-color of navbar */
   --bs-dark-rgb: 14, 16, 18;
-  /* --main-font: "Abel", sans-serif; */
-  --main-font: "Poppins", sans-serif;
+  /* --main-font: "Poppins", sans-serif; */
+  --main-font: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -45,10 +45,10 @@ body {
   text-transform: uppercase;
 }
 .navbar-brand span {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   position: absolute;
-  top: 43px;
+  top: 40px;
 }
 .nav-item {
   padding: 0.5rem 1rem;
@@ -493,6 +493,7 @@ body {
 .about-right .card-body .card-title {
   font-size: 1.6rem;
   padding: 1rem 0rem;
+  color: #40140f;
   font-family: var(--main-font);
   text-transform: uppercase;
 }
@@ -540,17 +541,18 @@ body {
   background-color: #f1f3f6;
 }
 .policy-left p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-family: var(--main-font);
 }
 .policy-left p span {
   color: #2e559f;
+  font-weight: 500;
 }
 .policy-right {
   background-color: #fff;
 }
 .policy-right p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-family: var(--main-font);
   text-align: center;
 }
@@ -635,6 +637,7 @@ body {
   background-color: #f1f3f6;
 }
 .career h4 {
+  padding-top: 2rem;
   text-align: center;
   font-family: var(--main-font);
 }
