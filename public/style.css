@@ -161,7 +161,7 @@ body {
   font-size: 1.3rem;
   font-family: var(--main-font);
 }
-.welcome-section img{
+.welcome-section img {
   border: 2px solid #0e0e0e;
   border-radius: 12px;
 }
@@ -450,6 +450,8 @@ body {
   transform: rotate(360deg);
 }
 
+/* end of home page */
+
 /* About page */
 
 /* header section of carousel of about */
@@ -630,6 +632,10 @@ body {
 }
 .client-form .main-right {
   background-color: #f1f3f6;
+}
+.client-form .img-fluid{
+  border: 2px solid #000;
+  border-radius: 4px;
 }
 
 /* career page */
@@ -1586,6 +1592,9 @@ body {
   .carousel-caption h1 {
     font-size: 1.5rem;
   }
+  .carousel-caption .header_heading {
+    font-size: 1.5rem;
+  }
   .welcome-heading {
     font-size: 1.8rem;
   }
@@ -1620,6 +1629,18 @@ body {
   .latProTxt-three p {
     font-size: 1rem;
   }
+
+  .commercial-text h5,
+  .residential-text h5,
+  .land-text h5 {
+    font-size: 1.3rem;
+  }
+  .commercial-text #commercial_para,
+  .residential-text #residential_para,
+  .land-text #land_para {
+    font-size: 1rem;
+  }
+
   .footer-heading {
     font-size: 1.4rem;
   }
@@ -1692,11 +1713,14 @@ body {
   }
 
   /* feature section */
+  .feature h2{
+    font-size: 1.3rem;
+  }
   .feature .feature-text h3 {
     font-weight: normal;
   }
   .feature .feature-text h4 {
-    font-weight: normal;
+    font-weight: 1.1;
   }
   .feature .feature-text p {
     font-size: 1rem;
