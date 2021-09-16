@@ -28,7 +28,6 @@ body {
   width: 100%;
   z-index: 1;
   background: var(--bs-dark-rgb);
-  border-bottom: 1px solid #cda45e;
 }
 
 /* Home page */
